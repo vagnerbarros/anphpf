@@ -14,13 +14,13 @@
 			<li><a href="<?php echo Proxy::page(SobrePage::$NM_PAGINA)?>"><span>Quem Somos</span>
 			</a>
 			</li>
-			<li><a href="<?php echo Proxy::page(CadastrarPessoaPage::$NM_PAGINA)?>"><span>CADASTRAR-SE - Pessoa Física</span>
+			<li><a href="<?php echo Proxy::page(CadastrarPessoaPage::$NM_PAGINA)?>"><span>Cadastre-se - PESSOA FÍSICA</span>
 			</a>
 			</li>
-			<li><a href="<?php echo Proxy::page(CadastrarEmpreendimentoPage::$NM_PAGINA)?>"><span>CADASTRAR-SE - Pessoa Jurídica</span>
+			<li><a href="<?php echo Proxy::page(CadastrarEmpreendimentoPage::$NM_PAGINA)?>"><span>Cadastre-se - PESSOA JURÍDICA</span>
 			</a>
 			</li>
-			<li><a href="?"><span>:D</span>
+			<li><a href="<?php echo Proxy::page(FaleConoscoPage::$NM_PAGINA)?>"><span>Fale Conosco</span>
 			</a>
 			</li>
 		</ul>
@@ -29,16 +29,19 @@
 		<h2 class="blue">Notícias</h2>
 		<div class="module-content">
 			<ul class="none">
-				<li><strong><a href="?" class="black">21 December 2008</a>
+				
+				<li><strong><a href="?" class="black">06 Maio 2013</a>
 				</strong>
 					<p>Pellentesque tincidunt arcu quis tellus. Nunc turpis metus,
 						porta in, blandit vel, accumsan ac, mi. Vestibulum ante ipsum
-						primis</p> <a href="?">Read news</a></li>
-				<li><strong><a href="?" class="black">21 December 2008</a>
+						primis</p> <a href="?">Leia mais</a></li>
+				
+				<li><strong><a href="?" class="black">08 Maio 2013</a>
 				</strong>
 					<p>Pellentesque tincidunt arcu quis tellus. Nunc turpis metus,
 						porta in, blandit vel, accumsan ac, mi. Vestibulum ante ipsum
-						primis</p> <a href="?">Read news</a></li>
+						primis</p> <a href="?">Leia Mais</a></li>
+			
 			</ul>
 		</div>
 	</div>

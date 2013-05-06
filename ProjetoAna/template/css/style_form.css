@@ -75,6 +75,16 @@
 	font-weight: bold;
 }
 
+.form_cad textarea{
+	position: relative;
+	float: left;
+	padding: 5px;
+	margin-bottom: 15px;
+	height: 60px;
+	resize:none;
+	font-family: Arial;
+}
+
 .form_cad input[type=text], .form_cad input[type=password]{
 	position: relative;
 	float: left;
