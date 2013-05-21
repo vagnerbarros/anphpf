@@ -8,10 +8,16 @@ class RepositorioMensagem extends RepositorioEntidade {
 		parent::__construct(Mensagem::$NM_ENTITY);
 	}
 	
+	public function selectById($id){
+		$keys['id'] = $id;
+		$result = $this->select($keys);
+		return $result[0];
+	}
+	
 	public function mount($resultSet){
 		$objs = array();
 		while ($item = $resultSet->fetch()) {
-			array_push($objs, Pessoa::fromArray($item));
+			array_push($objs, Mensagem::fromArray($item));
 		}
 		return $objs;
 	}

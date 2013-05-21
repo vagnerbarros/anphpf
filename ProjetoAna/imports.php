@@ -31,10 +31,13 @@ Imports::page("FaleConoscoPage");
 Imports::page("ProgramacaoPage");
 Imports::page("AdminPage");
 Imports::page("ListagemPessoasPage");
+Imports::page("ListagemMensagemPage");
+Imports::page("DetalharMensagemPage");
 
 //Registra as Actions
 Imports::action("CadastrarPessoaAction");
 Imports::action("CadastrarEmpreendimentoAction");
 Imports::action("FaleConoscoAction");
+Imports::action("RemoverMensagemAction");
 
 ?>

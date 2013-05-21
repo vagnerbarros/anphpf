@@ -41,7 +41,7 @@ class FaleConoscoAction extends Action {
 				
 			$this->setMessage("Mensagem cadastrada com sucesso.", Constants::$_MSG_SUCCESS);
 			$this->load('100%');
-			$this->setForward(Forward::go(CadastrarPessoaPage::$NM_PAGINA.'&msg_cadastro=sucesso'));
+			$this->setForward(Forward::go(FaleConoscoPage::$NM_PAGINA.'&msg_cadastro=sucesso'));
 		}
 		catch(CaptchaIncorretoException $e){
 			$this->setMessage("As letras não foram digitadas corretamente! Por favor, tente novamente...", Constants::$_MSG_ERROR);
