@@ -28,6 +28,7 @@ Imports::page("SobrePage");
 Imports::page("CadastrarPessoaPage");
 Imports::page("CadastrarEmpreendimentoPage");
 Imports::page("FaleConoscoPage");
+Imports::page("ProgramacaoPage");
 
 //Registra as Actions
 Imports::action("CadastrarPessoaAction");
