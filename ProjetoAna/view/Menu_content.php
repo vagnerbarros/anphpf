@@ -20,6 +20,9 @@
 			<li><a href="<?php echo Proxy::page(CadastrarEmpreendimentoPage::$NM_PAGINA)?>"><span>Cadastre-se - PESSOA JURÍDICA</span>
 			</a>
 			</li>
+			<li><a href="<?php echo Proxy::page(ProgramacaoPage::$NM_PAGINA)?>"><span>Programação</span>
+			</a>
+			</li>
 			<li><a href="<?php echo Proxy::page(FaleConoscoPage::$NM_PAGINA)?>"><span>Fale Conosco</span>
 			</a>
 			</li>
