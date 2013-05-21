@@ -26,6 +26,9 @@
 			<li><a href="<?php echo Proxy::page(FaleConoscoPage::$NM_PAGINA)?>"><span>Fale Conosco</span>
 			</a>
 			</li>
+			<li><a href="<?php echo Proxy::page(AdminPage::$NM_PAGINA)?>"><span>Admin</span>
+			</a>
+			</li>
 		</ul>
 	</div>
 	<div class="module-box">
