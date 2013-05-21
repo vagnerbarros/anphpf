@@ -6,6 +6,7 @@ require_once("model/exception/CadastroException.php");
 require_once("model/entidade/Pessoa.php");
 require_once("model/entidade/Empreendimento.php");
 require_once("model/entidade/AtividadeEconomica.php");
+require_once("model/entidade/Mensagem.php");
 
  //REPOSITORIOS
 require_once("model/repositorio/IRepositorio.php");
@@ -13,13 +14,14 @@ require_once("model/repositorio/RepositorioEntidade.php");
 require_once("model/repositorio/RepositorioPessoa.php");
 require_once("model/repositorio/RepositorioEmpreendimento.php");
 require_once("model/repositorio/RepositorioAtividadeEconomica.php");
+require_once("model/repositorio/RepositorioMensagem.php");
 
  //CADASTROS
 require_once("model/cadastro/CadastroEntidade.php");
 require_once("model/cadastro/CadastroPessoa.php");
 require_once("model/cadastro/CadastroEmpreendimento.php");
 require_once("model/cadastro/CadastroAtividadeEconomica.php");
- 
+require_once("model/cadastro/CadastroMensagem.php");
 
 class Fachada {
 
@@ -31,6 +33,7 @@ class Fachada {
 		$this->cadastros[Pessoa::$NM_ENTITY] = new CadastroPessoa($this);
 		$this->cadastros[Empreendimento::$NM_ENTITY] = new CadastroEmpreendimento($this);
 		$this->cadastros[AtividadeEconomica::$NM_ENTITY] = new CadastroAtividadeEconomica($this);
+		$this->cadastros[Mensagem::$NM_ENTITY] = new CadastroMensagem($this);
 	}
 	
 	public static function getInstance(){
@@ -53,6 +56,11 @@ class Fachada {
     //AtividadeEconomica
 	public function cadastroAtividadeEconomica(){
 		return $this->cadastros[AtividadeEconomica::$NM_ENTITY];
+	}
+	
+	//Mensagem
+	public function cadastroMensagem(){
+		return $this->cadastros[Mensagem::$NM_ENTITY];
 	}
 }
 

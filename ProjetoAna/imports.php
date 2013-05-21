@@ -35,5 +35,6 @@ Imports::page("ListagemPessoasPage");
 //Registra as Actions
 Imports::action("CadastrarPessoaAction");
 Imports::action("CadastrarEmpreendimentoAction");
+Imports::action("FaleConoscoAction");
 
 ?>

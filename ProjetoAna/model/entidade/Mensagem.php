@@ -43,7 +43,6 @@ class Mensagem implements Entidade {
 	public function compareTo($obj){
 		if(!($obj instanceof Mensagem))
 				throw new InvalidTypeException();
-		
 		return ($this->getId() == $obj->getId());
 	}
 	
