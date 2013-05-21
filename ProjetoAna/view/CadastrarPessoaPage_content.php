@@ -2,7 +2,24 @@
 <?php 
 	include 'Menu_content.php';	
 	include 'Topo_content.php';
+	$msg_cadastro = $args->get('msg_cadastro');
 ?>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<script>
+  $(function() {
+    $( "#dialog" ).dialog();
+  });
+</script>
+
+ <?php if($msg_cadastro!=null){ ?>
+	        <div id="dialog" title="GLAV">
+                <p>Cadastro Efetuado com Sucesso! Informamos que em breve entraremos em contato!</p>
+            </div>
+ <?php }?>
 
 <div class="conteudo_page">
 
@@ -48,17 +65,37 @@
 	
 		<input class="wh176 epc" id="<?php echo Proxy::encrypt('cidade');?>" name="<?php echo Proxy::encrypt('cidade');?>" type="text"  onfocus='ajuda(this, "ajuda_<?php echo Proxy::encrypt('cidade');?>");'/>
 		<select class="wh190 epc" name="<?php echo Proxy::encrypt('estado');?>">
-		     <option value="Alagoas">Alagoas</option>
-		     <option value="São Paulo">São Paulo</option>
-		     <option value="Rio de Janeiro">Rio de Janeiro</option>
-		     <option value="Bahia">Bahia</option>
-		     <option value="Pernambuco">Pernambuco</option>
+		    <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AM">AM</option>
+            <option value="AP">AP</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MG">MG</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="PR">PR</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="RS">RS</option>
+            <option value="SC">SC</option>
+            <option value="SE">SE</option>
+            <option value="SP">SP</option>
+            <option value="TO">TO</option>
 		</select>
 		<select class="wh190" name="<?php echo Proxy::encrypt('pais');?>">
 		     <option value="Brasil">Brasil</option>
-		     <option value="Argentina">Argentina</option>
-		     <option value="Estados Unidos">Estados Unidos</option>
-		     <option value="Canadá">Canadá</option>
+		     <option value="Argentina">Outro</option>
 		</select>
 	
 		<label class="info">.: Contato :.</label>
@@ -79,10 +116,11 @@
 		
 		<label class="wh376">Segmento: <span>*</span> </label>
 		<select class="wh400" name="<?php echo Proxy::encrypt('segmento');?>">
-		     <option selected="selected" value="1">Tal 1</option>
-		     <option selected="selected" value="2">Tal 2</option>
-		     <option selected="selected" value="3">Tal 3</option>
-		     <option selected="selected" value="4">Tal 4</option>
+		     <option selected="selected" value="Comércio">Comércio</option>
+		     <option selected="selected" value="Tecnologia">Tecnologia</option>
+		     <option selected="selected" value="Indústria">Indústria</option>
+		     <option selected="selected" value="Serviços">Serviços</option>
+		     <option selected="selected" value="Saúde">Saúde</option>
 		</select>
 		
 		<?php include "view/components/Captcha.php"?>
@@ -93,5 +131,6 @@
 </div>
 </div>
 <?php 
+	include 'Parceiros_content.php';
 	include 'rodape.php';
 ?>

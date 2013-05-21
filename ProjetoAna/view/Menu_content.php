@@ -54,6 +54,9 @@
 			<ul class="none">
 				<li><strong> &bull; Comércio</strong></li>
 				<li><strong> &bull; Tecnologia</strong></li>
+				<li><strong> &bull; Indústria</strong></li>
+				<li><strong> &bull; Serviços</strong></li>
+				<li><strong> &bull; Saúde</strong></li>
 			</ul>
 		</div>
 	</div>

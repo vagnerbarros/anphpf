@@ -35,5 +35,6 @@
 </div>
 </div>
 <?php 
+	include 'Parceiros_content.php';
 	include 'rodape.php';
 ?>

@@ -45,7 +45,7 @@ class CadastrarPessoaAction extends Action {
 			
 		$this->setMessage("Pessoa cadastrado com sucesso.", Constants::$_MSG_SUCCESS);
 		$this->load('100%');		
-		$this->setForward(Forward::go(CadastrarPessoaPage::$NM_PAGINA));
+		$this->setForward(Forward::go(CadastrarPessoaPage::$NM_PAGINA.'&msg_cadastro=sucesso'));
 		
 	}
 }
