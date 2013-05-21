@@ -6,7 +6,7 @@
 
  <div class="conteudo_page">
 
-	<form class="form_cad" action='<?php echo Proxy::action(FaleConoscoAction::$NM_ACTION);?>' method="post" target="_top">
+	<form class="form_cad" action='<?php echo Proxy::action(FaleConoscoAction::$NM_ACTION)?>' method="post" target="_top">
 		
 		<label class="altr">* Campos Obrigatórios</label>
 		
@@ -22,10 +22,10 @@
 		<input class="wh376" id="<?php echo Proxy::encrypt('telefone');?>" name="<?php echo Proxy::encrypt('telefone');?>" type="text"/>
 		
 		<label class="wh400">Assunto: <span>*</span> </label>
-		<input class="wh376" id="<?php echo Proxy::encrypt('assunto');?>" name="<?php echo Proxy::encrypt('assunto');?>" type="text"/>
+		<input class="wh376" id="<?php echo Proxy::encrypt('telefone');?>" name="<?php echo Proxy::encrypt('assunto');?>" type="text"/>
 		
 		<label class="wh400">Mensagem: <span>*</span> </label>
-		<textarea name="<?php echo Proxy::encrypt('mensagem');?>" class="wh376" rows="" cols=""></textarea>
+		<textarea id="<?php echo Proxy::encrypt('mensagem');?>" name="<?php echo Proxy::encrypt('mensagem');?>" class="wh376" rows="" cols=""></textarea>
 		
 		<?php include "view/components/Captcha.php"?>
 	
