@@ -35,7 +35,7 @@ class CadastrarEmpreendimentoAction extends Action {
 		$telefone_recado = $form->get('telefone_recado');
 		$email = $form->get('email');
 		$faixa_faturamento = $form->get('faixa_faturamento');
-		$data_abertura = Datas::StringParaData($form->get('data_abertura'));
+		$data_abertura = $form->get('data_abertura');
 		$razao_social = $form->get('razao_social');	
 		$inscricao_estadual = $form->get('inscricao_estadual');
 		$registro = $form->get('registro');
@@ -43,16 +43,16 @@ class CadastrarEmpreendimentoAction extends Action {
 		$pessoas_ocupadas = $form->get('pessoas_ocupadas');
 		$setor = $form->get('setor');
 		$tipo = $form->get('tipo');
-		$situacao = $form->get('situacao');
+		$segmento = $form->get('segmento');
 		
-		$empreendimento = new Empreendimento(null, $tipo, $situacao, $cnpj, $inscricao_estadual, $registro, $nome_fantasia, $razao_social, $pessoas_ocupadas, $data_abertura, $faixa_faturamento, $setor, $cep, $pais, $estado, $cidade, $bairro, $logradouro, $numero, $complemento, $telefone_residencial, $telefone_celular, $telefone_comercial, $telefone_recado, $email, Constants::$_ATIVO);
+		$empreendimento = new Empreendimento($id, $tipo, $cnpj, $inscricao_estadual, $registro, $nome_fantasia, $razao_social, $pessoas_ocupadas, $data_abertura, $faixa_faturamento, $segmento, $cep, $pais, $estado, $cidade, $bairro, $logradouro, $numero, $complemento, $telefone_residencial, $telefone_celular, $telefone_comercial, $telefone_recado, $email, Constants::$_ATIVO, $setor);
 		
 		$fachada = Fachada::getInstance();
 		$fachada->cadastroEmpreendimento()->cadastrar($empreendimento);
 			
 		$this->setMessage("Pessoa cadastrado com sucesso.", Constants::$_MSG_SUCCESS);
 		$this->load('100%');		
-		$this->setForward(Forward::go(CadastrarEmpreendimentoPage::$NM_PAGINA));
+		$this->setForward(Forward::go(CadastrarEmpreendimentoPage::$NM_PAGINA.'&msg_cadastro=sucesso'));
 		
 	}
 }
