@@ -33,18 +33,27 @@
 			<thead>
 				<tr>
 					<th>Nome</th>
+					<th>CPF</th>
 					<th>E-mail</th>
 					<th>Telefone</th>
+					<th>Ações</th>
 				</tr>
 			</thead>
 			
 			<tbody>
 			
-			<?php for($i=0; $i<100; $i++){ ?>
+			<?php 
+			     $fachada = Fachada::getInstance();
+			     $pessoas = $fachada->cadastroPessoa()->listarPessoas();
+			?>
+			
+			<?php foreach ($pessoas as $pessoa){ ?>
                 <tr>
-                    <td align="center"><?php echo 'Wolney ' . $i;?></td>
-                    <td align="center">oi</td>
-                    <td align="center">oi</td>
+                    <td align="center"><?php echo $pessoa->getNome();?></td>
+                    <td align="center"><?php echo $pessoa->getCpf();?></td>
+                    <td align="center"><?php echo $pessoa->getEmail();?></td>
+                    <td align="center"><?php echo $pessoa->getTelefoneResidencial();?></td>
+                    <td align="center"><a href="#">Visualizar</a></td>
                 </tr>
             <?php  } ?>    
                 

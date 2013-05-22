@@ -12,6 +12,10 @@ class CadastroEmpreendimento extends CadastroEntidade {
 		$this->repositorio->create($empreendimento);
 	}
 	
+    public function listarEmpreendimentos(){
+		return $this->repositorio->listarEmpreendimentos();
+	}
+	
 }
 
 ?>
