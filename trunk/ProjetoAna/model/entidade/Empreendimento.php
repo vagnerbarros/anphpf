@@ -103,7 +103,7 @@ class Empreendimento implements Entidade {
 		$hash['pessoas_ocupadas'] = $this->getRazaoSocial();
 		$hash['data_abertura'] = $this->getDataAbertura();
 		$hash['faixa_faturamento'] = $this->getFaixaFaturamento();
-		$hash['setor'] = $this->getSetor();
+		$hash['segmento'] = $this->getSegmento();
 		$hash['cep'] = $this->getCep();
 		$hash['pais'] = $this->getPais();
 		$hash['estado'] = $this->getEstado();
@@ -117,8 +117,8 @@ class Empreendimento implements Entidade {
 		$hash['telefone_comercial'] = $this->getTelefoneComercial();
 		$hash['telefone_recado'] = $this->getTelefoneRecado();
 		$hash['email'] = $this->getEmail();
+		$hash['setor'] = $this->getSetor();
 		$hash['status'] = $this->getStatus();
-		$hash['segmento'] = $this->getSegmento();
 		
 		return $hash;
 	}
@@ -128,7 +128,7 @@ class Empreendimento implements Entidade {
 	 */
 	public static function fromArray($hash){
 		
-		return new Empreendimento($hash['id'], $hash['tipo'], $hash['cnpj'], $hash['inscricao_estadual'], $hash['dap'], $hash['registro'], $hash['nome_fantasia'], $hash['razao_social'], $hash['pessoas_ocupadas'], $hash['data_abertura'], $hash['faixa_faturamento'], $hash['setor'] , $hash['cep'], $hash['pais'], $hash['estado'], $hash['cidade'], $hash['bairro'], $hash['logradouro'], $hash['numero'], $hash['complemento'], $hash['telefone_residencial'], $hash['telefone_celular'], $hash['telefone_comercial'], $hash['email'], $hash['status'], $hash['segmento']);
+		return new Empreendimento($hash['id'], $hash['tipo'], $hash['cnpj'], $hash['inscricao_estadual'], $hash['registro'], $hash['nome_fantasia'], $hash['razao_social'], $hash['pessoas_ocupadas'], $hash['data_abertura'], $hash['faixa_faturamento'], $hash['segmento'], $hash['cep'], $hash['pais'], $hash['estado'], $hash['cidade'], $hash['bairro'], $hash['logradouro'], $hash['numero'], $hash['complemento'], $hash['telefone_residencial'], $hash['telefone_celular'], $hash['telefone_comercial'], $hash['telefone_recado'], $hash['email'], $hash['setor'] ,$hash['status']);
 	
 	}
 	//metodos get
