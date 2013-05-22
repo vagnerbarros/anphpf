@@ -20,6 +20,10 @@ class CadastroEmpreendimento extends CadastroEntidade {
 		return $this->repositorio->selectById($id);
 	}
 	
+	public function buscarPorSegmento($segmento){
+		return $this->repositorio->selectBySegmento($segmento);
+	}
+	
 }
 
 ?>
