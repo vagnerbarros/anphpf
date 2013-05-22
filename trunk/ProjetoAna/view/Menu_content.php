@@ -26,9 +26,6 @@
 			<li><a href="<?php echo Proxy::page(FaleConoscoPage::$NM_PAGINA)?>"><span>Fale Conosco</span>
 			</a>
 			</li>
-			<li><a href="<?php echo Proxy::page(AdminPage::$NM_PAGINA)?>"><span>Admin</span>
-			</a>
-			</li>
 		</ul>
 	</div>
 	<div class="module-box">
@@ -36,17 +33,13 @@
 		<div class="module-content">
 			<ul class="none">
 				
-				<li><strong><a href="?" class="black">06 Maio 2013</a>
+				<li><strong><a href="#" class="black">22 Maio 2013</a>
 				</strong>
-					<p>Pellentesque tincidunt arcu quis tellus. Nunc turpis metus,
-						porta in, blandit vel, accumsan ac, mi. Vestibulum ante ipsum
-						primis</p> <a href="?">Leia mais</a></li>
+					<p>FAFICA REALIZA FEIRA DO ALUNO EMPREENDEDOR, GLAV ESTARÁ PRESENTE NESTE EVENTO</p> <a href="<?php echo Proxy::page(FeiraPage::$NM_PAGINA)?>">Leia mais</a></li>
 				
-				<li><strong><a href="?" class="black">08 Maio 2013</a>
+				<li><strong><a href="#" class="black">22 Maio 2013</a>
 				</strong>
-					<p>Pellentesque tincidunt arcu quis tellus. Nunc turpis metus,
-						porta in, blandit vel, accumsan ac, mi. Vestibulum ante ipsum
-						primis</p> <a href="?">Leia Mais</a></li>
+					<p>GLAV OFERECE CURSOS PARA TREINAMENTO E APERFEIÇOAMENTO DO SEU NEGÓCIO</p> <a href="<?php echo Proxy::page(CursoPage::$NM_PAGINA)?>">Leia Mais</a></li>
 			
 			</ul>
 		</div>
@@ -55,11 +48,11 @@
 		<h2 class="blue">Seguimentos</h2>
 		<div class="module-content">
 			<ul class="none">
-				<li><strong> &bull; Comércio</strong></li>
-				<li><strong> &bull; Tecnologia</strong></li>
-				<li><strong> &bull; Indústria</strong></li>
-				<li><strong> &bull; Serviços</strong></li>
-				<li><strong> &bull; Saúde</strong></li>
+				<li><strong> &bull; <a href="<?php echo Proxy::page(EmpreendimentosSegmentosPage::$NM_PAGINA, array(Proxy::encrypt('segmento')=>'Comércio'));?>">Comércio</a></strong></li>
+				<li><strong> &bull; <a href="<?php echo Proxy::page(EmpreendimentosSegmentosPage::$NM_PAGINA, array(Proxy::encrypt('segmento')=>'Tecnologia'));?>">Tecnologia</a></strong></li>
+				<li><strong> &bull; <a href="<?php echo Proxy::page(EmpreendimentosSegmentosPage::$NM_PAGINA, array(Proxy::encrypt('segmento')=>'Indústria'));?>">Indústria</a></strong></li>
+				<li><strong> &bull; <a href="<?php echo Proxy::page(EmpreendimentosSegmentosPage::$NM_PAGINA, array(Proxy::encrypt('segmento')=>'Serviços'));?>">Serviços</a></strong></li>
+				<li><strong> &bull; <a href="<?php echo Proxy::page(EmpreendimentosSegmentosPage::$NM_PAGINA, array(Proxy::encrypt('segmento')=>'Saúde'));?>">Saúde</a></strong></li>
 			</ul>
 		</div>
 	</div>

@@ -14,6 +14,12 @@ class RepositorioEmpreendimento extends RepositorioEntidade {
 		return $result[0];
 	}
 	
+    public function selectBySegmento($segmento){
+		$keys['segmento'] = $segmento;
+		$result = $this->select($keys);
+		return $result;
+	}
+	
     public function listarEmpreendimentos(){
 		$keys['status'] = Constants::$_ATIVO;
 		$result = $this->select($keys);

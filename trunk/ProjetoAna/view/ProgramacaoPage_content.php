@@ -5,22 +5,18 @@
 ?>
 
 	 <div class="conteudo_page">
-		<h3>Programação 1 - 01/05/2013</h3>
-		<img alt="" src="template/css/img/p1.jpg" width="350" height="220">
-        <p>Feira do aluno empreendedor...
-        <br/>
-    	Esperamos que você encontre conosco soluções quem venham a contribuir na tomada de decisões de sua empresa.
+		<h3>FAFICA REALIZA FEIRA DO ALUNO EMPREENDEDOR - 22/05/2013</h3>
+		<img alt="" src="template/css/img/feira.jpg" width="350" height="220">
+        <p>A Feira do Aluno Empreendedor, uma oportunidade para que os estudantes coloquem em prática um pouco do que aprendem em sala de aula, será realizada no dia 22 de maio, no pátio interno da FAFICA.
     	<br/>    		
-		<a href="<?php echo Proxy::page(SobrePage::$NM_PAGINA)?>">Leia mais</a>
+		<a href="<?php echo Proxy::page(FeiraPage::$NM_PAGINA)?>">Leia mais</a>
 		</p>
 		
-		<h3>Programação 2 - 01/05/2013</h3>
-		<img alt="" src="template/css/img/p1.jpg" width="350" height="220">
-        <p>Feira do aluno empreendedor... 
-        <br/>
-    	Esperamos que você encontre conosco soluções quem venham a contribuir na tomada de decisões de sua empresa.
+		<h3>CURSOS OFERECIDOS PELA GLAV - 22/05/2013</h3>
+		<img alt="" src="template/css/img/cursos.jpg" width="350" height="220">
+        <p>A GLAV oferece opções de cursos para seu negócio
     	<br/>    		
-		<a href="<?php echo Proxy::page(SobrePage::$NM_PAGINA)?>">Leia mais</a>
+		<a href="<?php echo Proxy::page(CursoPage::$NM_PAGINA)?>">Leia mais</a>
 		</p>
 	</div>
     
