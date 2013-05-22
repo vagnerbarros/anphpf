@@ -34,6 +34,8 @@ Imports::page("ListagemPessoasPage");
 Imports::page("ListagemEmpreendimentoPage");
 Imports::page("ListagemMensagemPage");
 Imports::page("DetalharMensagemPage");
+Imports::page("DetalharPessoaPage");
+Imports::page("DetalharEmpreendimentoPage");
 
 //Registra as Actions
 Imports::action("CadastrarPessoaAction");

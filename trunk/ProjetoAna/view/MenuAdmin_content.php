@@ -14,10 +14,10 @@
 			<li><a href="<?php echo Proxy::page(ListagemPessoasPage::$NM_PAGINA)?>"><span>Consultar Pessoas</span>
 			</a>
 			</li>
-			<li><a href="<?php echo Proxy::page(ListagemMensagemPage::$NM_PAGINA)?>"><span>Consultar Mensagens</span>
+			<li><a href="<?php echo Proxy::page(ListagemEmpreendimentoPage::$NM_PAGINA)?>"><span>Consultar Empreendimentos</span>
 			</a>
 			</li>
-			<li><a href="#"><span>Consultar Empreendimentos</span>
+			<li><a href="<?php echo Proxy::page(ListagemMensagemPage::$NM_PAGINA)?>"><span>Consultar Mensagens</span>
 			</a>
 			</li>
 

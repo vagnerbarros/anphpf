@@ -36,7 +36,7 @@
 					<th>CPF</th>
 					<th>E-mail</th>
 					<th>Telefone</th>
-					<th>Ações</th>
+					<th>Detalhar</th>
 				</tr>
 			</thead>
 			
@@ -53,7 +53,7 @@
                     <td align="center"><?php echo $pessoa->getCpf();?></td>
                     <td align="center"><?php echo $pessoa->getEmail();?></td>
                     <td align="center"><?php echo $pessoa->getTelefoneResidencial();?></td>
-                    <td align="center"><a href="#">Visualizar</a></td>
+                    <td align="center"><a href="<?php echo Proxy::page(DetalharPessoaPage::$NM_PAGINA, array(Proxy::encrypt('id')=>$pessoa->getId()));?>">>></a></td>
                 </tr>
             <?php  } ?>    
                 

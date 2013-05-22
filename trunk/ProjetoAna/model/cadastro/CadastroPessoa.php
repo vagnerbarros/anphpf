@@ -12,6 +12,10 @@ class CadastroPessoa extends CadastroEntidade {
 		$this->repositorio->create($pessoa);
 	}
 	
+	public function buscarPorId($id){
+		return $this->repositorio->selectById($id);
+	}
+	
 	public function listarPessoas(){
 		return $this->repositorio->listarPessoas();
 	}
