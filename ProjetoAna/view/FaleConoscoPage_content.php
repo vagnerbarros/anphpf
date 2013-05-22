@@ -2,7 +2,24 @@
 <?php 
 	include 'Menu_content.php';	
 	include 'Topo_content.php';
+	$msg_cadastro = $args->get('msg_cadastro');
 ?>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<script>
+  $(function() {
+    $( "#dialog" ).dialog();
+  });
+</script>
+
+ <?php if($msg_cadastro!=null){ ?>
+	        <div id="dialog" title="GLAV">
+                <p>Obrigado por sua participação! Informamos que em breve entraremos em contato.</p>
+            </div>
+ <?php }?>
 
  <div class="conteudo_page">
 
