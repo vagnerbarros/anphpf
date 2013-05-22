@@ -26,7 +26,7 @@
 
 
 	 <div class="conteudo_page">
-		<h3>Pessoas Cadastradas</h3>
+		<h3>Empreendimentos Cadastrados</h3>
 		<div id="demo">
 		
 		<table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
@@ -36,7 +36,7 @@
 					<th>CNPJ</th>
 					<th>Segmento</th>
 					<th>Telefone</th>
-					<th>Ações</th>
+					<th>Detalhar</th>
 				</tr>
 			</thead>
 			
@@ -52,8 +52,8 @@
                     <td align="center"><?php echo $empreendimento->getRazaoSocial();?></td>
                     <td align="center"><?php echo $empreendimento->getCnpj();?></td>
                     <td align="center"><?php echo $empreendimento->getSegmento();?></td>
-                    <td align="center"><?php //echo $empreendimento->getTelefoneComercial();?></td>
-                    <td align="center"><a href="#">Visualizar</a></td>
+                    <td align="center"><?php echo $empreendimento->getTelefoneComercial();?></td>
+                    <td align="center"><a href="<?php echo Proxy::page(DetalharEmpreendimentoPage::$NM_PAGINA, array(Proxy::encrypt('id')=>$empreendimento->getId()));?>">>></a></td>
                 </tr>
             <?php  } ?>    
                 

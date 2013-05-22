@@ -16,6 +16,10 @@ class CadastroEmpreendimento extends CadastroEntidade {
 		return $this->repositorio->listarEmpreendimentos();
 	}
 	
+	public function buscarPorId($id){
+		return $this->repositorio->selectById($id);
+	}
+	
 }
 
 ?>

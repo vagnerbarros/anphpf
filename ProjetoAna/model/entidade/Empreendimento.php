@@ -7,7 +7,6 @@ class Empreendimento implements Entidade {
 	
 	private $id;
 	private $tipo;
-	private $situacao;
 	private $cnpj;
 	private $inscricao_estadual;
 	private $registro;
@@ -16,7 +15,7 @@ class Empreendimento implements Entidade {
 	private $pessoas_ocupadas;
 	private $data_abertura;
 	private $faixa_faturamento;
-	private $setor;
+	private $segmento;
 	private $cep;
 	private $pais;
 	private $estado;
@@ -31,15 +30,15 @@ class Empreendimento implements Entidade {
 	private $telefone_recado;
 	private $email;
 	private $status;
+	private $setor;
 
 	
 	//construtor
-	public function Empreendimento($id, $tipo, $situacao, $cnpj, $inscricao_estadual, $registro, $nome_fantasia, $razao_social, $pessoas_ocupadas, $data_abertura, $faixa_faturamento, $setor,  $cep, $pais, $estado, $cidade, $bairro, $logradouro, $numero, $complemento, $telefone_residencial, $telefone_celular, $telefone_comercial, $telefone_recado, $email, $status){
+	public function Empreendimento($id, $tipo, $cnpj, $inscricao_estadual, $registro, $nome_fantasia, $razao_social, $pessoas_ocupadas, $data_abertura, $faixa_faturamento, $segmento, $cep, $pais, $estado, $cidade, $bairro, $logradouro, $numero, $complemento, $telefone_residencial, $telefone_celular, $telefone_comercial, $telefone_recado, $email, $status, $setor){
 		
 		$this->setId($id);
 		$this->setTipo($tipo);
-		$this->setSituacao($situacao);
-		$this->setCnpf($cnpj);
+		$this->setCnpj($cnpj);
 		$this->setInscricaoEstadual($inscricao_estadual);
 		$this->setRegistro($registro);
 		$this->setNomeFantasia($nome_fantasia);
@@ -62,6 +61,7 @@ class Empreendimento implements Entidade {
 		$this->setTelefoneRecado($telefone_recado);
 		$this->setEmail($email);
 		$this->setStatus($status);
+		$this->setSegmento($segmento);
 	}
 	
 	/**
@@ -95,8 +95,7 @@ class Empreendimento implements Entidade {
 		
 		$hash['id'] = $this->getId();
 		$hash['tipo'] = $this->getTipo();
-		$hash['situacao'] = $this->getSituacao();
-		$hash['cnpj'] = $this->getCnpf();
+		$hash['cnpj'] = $this->getCnpj();
 		$hash['inscricao_estadual'] = $this->getInscricaoEstadual();
 		$hash['registro'] = $this->getRegistro();
 		$hash['nome_fantasia'] = $this->getNomeFantasia();
@@ -119,6 +118,7 @@ class Empreendimento implements Entidade {
 		$hash['telefone_recado'] = $this->getTelefoneRecado();
 		$hash['email'] = $this->getEmail();
 		$hash['status'] = $this->getStatus();
+		$hash['segmento'] = $this->getSegmento();
 		
 		return $hash;
 	}
@@ -128,7 +128,7 @@ class Empreendimento implements Entidade {
 	 */
 	public static function fromArray($hash){
 		
-		return new Empreendimento($hash['id'], $hash['tipo'], $hash['situacao'], $hash['cnpj'], $hash['inscricao_estadual'], $hash['dap'], $hash['registro'], $hash['nome_fantasia'], $hash['razao_social'], $hash['pessoas_ocupadas'], $hash['data_abertura'], $hash['faixa_faturamento'], $hash['setor'] , $hash['cep'], $hash['pais'], $hash['estado'], $hash['cidade'], $hash['bairro'], $hash['logradouro'], $hash['numero'], $hash['complemento'], $hash['telefone_residencial'], $hash['telefone_celular'], $hash['telefone_comercial'], $hash['email'], $hash['status']);
+		return new Empreendimento($hash['id'], $hash['tipo'], $hash['cnpj'], $hash['inscricao_estadual'], $hash['dap'], $hash['registro'], $hash['nome_fantasia'], $hash['razao_social'], $hash['pessoas_ocupadas'], $hash['data_abertura'], $hash['faixa_faturamento'], $hash['setor'] , $hash['cep'], $hash['pais'], $hash['estado'], $hash['cidade'], $hash['bairro'], $hash['logradouro'], $hash['numero'], $hash['complemento'], $hash['telefone_residencial'], $hash['telefone_celular'], $hash['telefone_comercial'], $hash['email'], $hash['status'], $hash['segmento']);
 	
 	}
 	//metodos get
@@ -139,10 +139,7 @@ class Empreendimento implements Entidade {
     public function getTipo(){
 		return $this->tipo;
 	}
-    public function getSituacao(){
-		return $this->situacao;
-	}
-    public function getCnpf(){
+    public function getCnpj(){
 		return $this->cnpj;
 	}
     public function getInscricaoEstadual(){
@@ -165,6 +162,9 @@ class Empreendimento implements Entidade {
 	}
     public function getFaixaFaturamento(){
 		return $this->faixa_faturamento;
+	}
+    public function getSegmento(){
+		return $this->segmento;
 	}
     public function getSetor(){
 		return $this->setor;
@@ -220,10 +220,7 @@ class Empreendimento implements Entidade {
 	public function setTipo($tipo){
 		$this->tipo = $tipo;
 	}
-	public function setSituacao($situacao){
-		$this->situacao = $situacao;
-	}
-	public function setCnpf($cnpj){
+	public function setCnpj($cnpj){
 		$this->cnpj = $cnpj;
 	}
 	public function setInscricaoEstadual($inscricao_estadual){
@@ -246,6 +243,9 @@ class Empreendimento implements Entidade {
 	}
 	public function setFaixaFaturamento($faixa_faturamento){
 		$this->faixa_faturamento = $faixa_faturamento;
+	}
+    public function setSegmento($segmento){
+		$this->segmento = $segmento;
 	}
 	public function setSetor($setor){
 		$this->setor = $setor;
