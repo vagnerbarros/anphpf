@@ -8,12 +8,12 @@ class Constants {
 	public static $_DEBUG = true;
 	
 	//DOMAIN
-	public static $_DOMAIN = "http://localhost/glav";
+	public static $_DOMAIN = "http://localhost/yousoft1";
 	
 	//DATABASE PARAMETERS
 	
 		//DATABASE HOST
-		public static $_HOST = "localhost"; //LOCAL
+		public static $_HOST = "dbmy0052.whservidor.com"; //LOCAL
 		//public static $_HOST = "dbmy0101.whservidor.com"; //deploy
 		
 		//DATABASE INFO
@@ -21,9 +21,9 @@ class Constants {
 	//	public static $_PASS = "sillabus4cafeh"; //sillabus4cafeh
 	//	public static $_BASE = "sillabus_4"; 
 	
-		public static $_USER = "root";
-		public static $_PASS = ""; 
-		public static $_BASE = "glav";
+		public static $_USER = "yousoft1";
+		public static $_PASS = "10ana10"; 
+		public static $_BASE = "yousoft1";
 	
 		//ATIVO
 		public static $_ATIVO = 'ATIVO';
