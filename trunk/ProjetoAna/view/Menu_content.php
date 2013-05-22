@@ -39,7 +39,7 @@
 				
 				<li><strong><a href="#" class="black">22 Maio 2013</a>
 				</strong>
-					<p>GLAV OFERECE CURSOS PARA TREINAMENTO E APERFEIÇOAMENTO DO SEU NEGÓCIO</p> <a href="<?php echo Proxy::page(CursoPage::$NM_PAGINA)?>">Leia Mais</a></li>
+					<p>SENAC oferece cursos em parceria com o Sebrae de aperfeiçoamento em Gestão e Comércio</p> <a href="<?php echo Proxy::page(CursoPage::$NM_PAGINA)?>">Leia Mais</a></li>
 			
 			</ul>
 		</div>

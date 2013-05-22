@@ -10,7 +10,7 @@
 	 <div class="conteudo_page">
 		<h3>Empresas Convêniadas Por Segmento de <?php echo $segmento?></h3>
 		<?php  foreach ($empreendimentos as $empreendimento) { ?>
-	 	          <p><?php echo $empreendimento->getRazaoSocial();?></p><br/>
+	 	          <p><?php echo '- ' . $empreendimento->getNomeFantasia();?></p><br/>
 		<?php }?>
 	</div>
     
