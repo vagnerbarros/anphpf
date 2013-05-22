@@ -31,6 +31,7 @@ Imports::page("FaleConoscoPage");
 Imports::page("ProgramacaoPage");
 Imports::page("AdminPage");
 Imports::page("ListagemPessoasPage");
+Imports::page("ListagemEmpreendimentoPage");
 Imports::page("ListagemMensagemPage");
 Imports::page("DetalharMensagemPage");
 
